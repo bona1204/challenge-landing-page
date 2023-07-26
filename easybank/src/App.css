@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  font-family: "public sans", sans-serif;
+  /*  border: 1px dotted red; */
+}
+.App {
+  margin: auto;
+  background-color: hsl(0, 0%, 100%);
+  flex-direction: column;
+}
+.Navigator {
+  margin: auto;
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  height: 5rem;
+  z-index: 1;
+}
+.Routes {
+  justify-content: space-between;
+  width: auto;
+  z-index: 1;
+}
+.Route {
+  text-decoration: none;
+  margin: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+  font-weight: 500;
+  font-size: 18px;
+  color: hsl(233, 8%, 62%);
+  position: relative;
+  width: max-content;
+  z-index: 1;
+}
+.Route::before {
+  content: "";
+  position: absolute;
+  bottom: -1.9rem;
+  height: 5px;
+  width: 100%;
+  left: 0;
+  background-image: linear-gradient(
+    90deg,
+    hsl(136, 65%, 51%) 10%,
+    hsl(192, 70%, 51%) 100%
+  );
+  transition: 0.25s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+.Route:hover::before {
+  transform: scaleX(1);
+}
+.Route:hover {
+  color: hsl(233, 26%, 24%);
+}
+.Invitation {
+  cursor: pointer;
+  background-image: linear-gradient(
+    90deg,
+    hsl(136, 65%, 51%) 10%,
+    hsl(192, 70%, 51%) 100%
+  );
+  border: none;
+  font-weight: 300;
+  font-size: 18px;
+  color: hsl(0, 0%, 98%);
+  font-weight: 500;
+  padding: 1rem 2.8rem;
+  border-radius: 12%/50%;
+  z-index: 1;
+}
+.Invitation:hover {
+  background-image: linear-gradient(
+    90deg,
+    hsl(136, 65%, 68%) 10%,
+    hsl(192, 70%, 68%) 100%
+  );
+}
+.Body {
+  padding: 0px;
+  width: 100%;
+  width: 1;
+  display: flex;
+  background-color: hsl(0, 0%, 98%);
+  height: 40rem;
+}
+
+.Left-size {
+  padding-top: 10rem;
+  width: 50%;
+}
+.Title {
+  margin: auto;
+  font-weight: 500;
+  width: 60%;
+  font-size: 3.5rem;
+  padding-bottom: 2rem;
+  color: hsl(233, 26%, 24%);
+}
+.Subtitle {
+  margin: auto;
+  font-weight: 300;
+  width: 60%;
+  font-size: 18px;
+  padding-bottom: 2rem;
+  color: hsl(233, 8%, 62%);
+}
+.Right-size {
+  width: 50%;
+  background-image: url("./resources/bg-intro-desktop.svg");
+  background-position: left;
+  z-index: 0;
+  overflow-y: hidden;
+}
+.Invitationbutton {
+  margin-left: 11.5rem;
+}
+.Mockups {
+  position: relative;
+  top: -120px;
+  text-align: end;
+  z-index: 0;
+  cursor: default;
+  caret-color: transparent;
+  bottom: 0;
+}
+
+.Second_Body {
+  background-color: hsl(220, 16%, 96%);
+  width: 100%;
+  padding: 5rem;
+}
+.Second_title {
+  font-weight: 500;
+  font-size: 3rem;
+  color: hsl(233, 26%, 24%);
+  text-align: start;
+  padding-left: 6.5rem;
+}
+.Second_subtitle {
+  margin-left: 6.5rem;
+  margin-top: 2rem;
+  font-weight: 300;
+  width: 40%;
+  font-size: 18px;
+  padding-bottom: 2rem;
+  color: hsl(233, 8%, 62%);
+}
+.Bullets {
+  display: grid;
+}
