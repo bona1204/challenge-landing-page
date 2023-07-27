@@ -675,7 +675,7 @@
     cursor: pointer;
     padding-bottom: 1rem;
   }
-  .Footer_routes:hover {
+  .Footer_route:hover {
     background: linear-gradient(90deg,
         hsl(136, 65%, 51%) 10%,
         hsl(192, 70%, 51%) 100%);
