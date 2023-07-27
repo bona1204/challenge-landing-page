@@ -3,7 +3,7 @@
   font-family: "public sans", sans-serif;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 501px) {
   .App {
     margin: auto;
     background-color: hsl(0, 0%, 100%);
@@ -338,7 +338,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .Navigator {
     display: grid;
     padding-top: 0.2rem;

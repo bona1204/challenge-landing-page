@@ -9,8 +9,8 @@ import { useMediaQuery } from 'react-responsive'
 
 function App() {
   const [Open, setOpen] = useState(false)
-  const isBigScreen = useMediaQuery({ query: '(min-width: 376px)' })
-  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 375px)' })
+  const isBigScreen = useMediaQuery({ query: '(min-width: 501px)' })
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 500px)' })
   const Menu = ["Home", "About", "Contact", "Blog", "Careers"]
   return (
     <div className="App">
