@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   font-family: "public sans", sans-serif;
-  /*  border: 1px dotted red; */
 }
 
 @media (min-width: 376px) {
