@@ -5,7 +5,7 @@ import currency from './resources/image-currency.jpg';
 import plane from './resources/image-plane.jpg';
 import restaurant from './resources/image-restaurant.jpg';
 import React, { useState } from 'react';
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from 'react-responsive';
 
 function App() {
   const [Open, setOpen] = useState(false)
